@@ -9,11 +9,12 @@
 body{
 margin: 0;
 background-color: #333;
-padding-top: 60px;
+min-width: 600px;
+/*padding-top: 60px;*/
 }
 #top-menu{	
 top: 0;
-position: fixed;
+position: sticky;
 height: 60px;
 width: 100%;
 background: linear-gradient(to right,#00ff51,#001aff,#ffd000,#ff0000);
@@ -164,16 +165,9 @@ display: inline-block;
 }
 #box3{
 height: 1000px;
-background-color: #bbb;
-}
-#box3-cards{
-height: 900px;
-position: absolute;
-top: 50px;	
-left: 0;
-right: 0;
-margin: auto;
-width: 1106px;
+text-align: center;
+padding-top: 25px;
+padding: bottom;
 }
 .box3-card{
 position: relative;
@@ -181,10 +175,13 @@ background-color: #222;
 height: 100%;
 width: 550px;
 display: inline-block;
+margin: 25px;
+height: 800px;
 }
 .box3-card-img{
 position: absolute;
 width: 100%;
+left: 0;
 }
 .box3-card-gradient{
 position: absolute;
@@ -232,9 +229,9 @@ text-decoration: none;
 #footer a:hover{
 text-decoration: underline;
 }
-#box5-cards{
+/*#box5-cards{
 display: flex;
-justify-content: center;
+justify-content: center;*/
 }
 .box5-card{
 height: 500px;
@@ -353,6 +350,8 @@ background-color:rgba(72,56,32,0.2);
 }
 #box4-simple-content{
 text-align: center;
+margin-top: 30px;
+margin-bottom: 30px;
 }	
 .box4-simple-content-text{
 width: 200px;
@@ -395,4 +394,31 @@ margin: auto;
 }
 .box6-table-img{
 width: 100%;
+}
+@media(max-width:800px; ){
+#box-more{
+padding-left: 5%; 
+padding-right: 5%
+width:90%;
+}
+ }
+#top{
+width: 100%;
+background-color:#000; 
+color: #fff;
+text-align: right;
+}
+#top a{
+color: #fff;
+text-decoration: none;
+}
+#top a:hover{
+text-decoration: underline;	
+}
+#box1-title{
+left: 50%;
+width: 90%;
+text-align: center;
+
+
 }
